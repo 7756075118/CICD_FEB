@@ -4,4 +4,4 @@ def test_home_page():
     response=tester.get("/")
     
     assert response.status_code == 200
-    return "Welcome to CICD Projects"
+    assert b"Welcome to CICD Projects" in response.data
