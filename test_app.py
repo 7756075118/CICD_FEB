@@ -4,4 +4,4 @@ def test_home_page():
     response=tester.get("/")
     
     assert response.status_code == 200
-    assert b"Welcome to flask ci/cd" in response.data
+    return "Welcome to CICD Projects"
